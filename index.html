@@ -2,14 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="" href="./src/assets/kcelogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="/src/assets/images/kce-campus-bg.jpg" as="image">
-    <script>fetch('https://kce-leave-portal-server.onrender.com/', { mode: 'cors' }).catch(() => {});</script>
-    <!-- Google Search Engine Verification Meta Tag -->
-    <meta name="google-site-verification" content="_UD4T6YAql4zyyTbm3RQP8iNRQ5SrpzdPonO6nixtdM" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./src/assets/kcelogo.png" />
+
+    <!-- Preload Background Image -->
+    <link rel="preload" href="/src/assets/images/kce-campus-bg.jpg" as="image" />
+
+    <!-- API Warm-up -->
+    <script>
+      fetch("https://kce-leave-portal-server.onrender.com/", { mode: "cors" }).catch(() => {});
+    </script>
+
+    <!-- Google Search Verification -->
+    <meta
+      name="google-site-verification"
+      content="_UD4T6YAql4zyyTbm3RQP8iNRQ5SrpzdPonO6nixtdM"
+    />
+
+    <!-- SEO Meta Tags -->
     <title>KCE Leave Portal</title>
+    <meta
+      name="description"
+      content="KCE Leave Portal - A smart platform for Karpagam College of Engineering students to apply and manage leave requests easily."
+    />
+    <meta
+      name="keywords"
+      content="KCE Leave Portal, Karpagam College of Engineering, KCE Leave, KCE Student Leave, Leave Application KCE, KCE Portal"
+    />
+    <meta name="author" content="Dhanush" />
+    <link rel="canonical" href="https://kceleaveportal.vercel.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="KCE Leave Portal" />
+    <meta
+      property="og:description"
+      content="Apply and manage your college leave requests effortlessly at KCE Leave Portal."
+    />
+    <meta property="og:url" content="https://kceleaveportal.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/assets/kcelogo.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KCE Leave Portal" />
+    <meta
+      name="twitter:description"
+      content="Apply and manage your college leave requests effortlessly."
+    />
+    <meta name="twitter:image" content="/src/assets/kcelogo.png" />
+
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
